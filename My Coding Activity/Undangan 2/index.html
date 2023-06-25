@@ -1,438 +1,169 @@
-  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
-  body {
-    background-image: url("image/Gold\ Black\ Elegant\ Graduation\ Party\ Invitation.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    color:#CA9D61;
-    overflow-y: hidden;
-  }
-  
-  .container {
-    text-align: center;
-  }
-  
-  .animated-text {
-    font-family: 'Cinzel Decorative', sans-serif;
-    opacity: 0;
-  }
-  
-  .animated-text:nth-child(1) {
-    animation: tektonik 1s ease-in-out forwards;
-  }
-  
-  .animated-text:nth-child(2) {
-    animation: usap 1s ease-in-out forwards;
-  }
-  
-  .animated-text:nth-child(3) {
-    animation: terbit 1s ease-in-out forwards;
-  }
-  
-  @keyframes tektonik {
-    0% {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes usap {
-    0% {
-      opacity: 0;
-      transform: scaleY(0);
-    }
-    100% {
-      opacity: 1;
-      transform: scaleY(1);
-    }
-  }
-  
-  @keyframes terbit {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .invite{
-    font-weight: 400;
-    font-size: 20px;
-  }
-  .wedding{
-    font-weight: bold;
-    font-size: 48px;
-  }
-  .nama{
-    font-weight: lighter;
-    font-family: 'Dancing Script', cursive;
-    font-size: 52px;
-  }
-
-  .open {
-    opacity: 0;
-    animation: fade-in 0.4s ease-in-out forwards;
-  }
-
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-}
-
-.btn {
-    font-family: 'Alegreya', serif;
-    font-size: 24px;
-    padding: 12px 24px;
-    background-color: #CA9D61;
-    color: #000;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-.btn:hover{
-    background-color: #3b3b3b;
-    color: #CA9D61;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-  .bounce-animation {
-    animation: bounce 1s ease-in-out ;
-  }
-
-  @keyframes bounce {
-    0% {
-      opacity: 0;
-      transform: scale(0.1);
-    }
-    60% {
-      opacity: 1;
-      transform: scale(1.1112);
-    }
-    80% {
-      transform: scale(0.9);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
-.template {
-    translate:0 -50px;
-    text-align: center;
-    display: none;
-}
-
-.hidden {
-    animation: template2 0.8s ease-in forwards;
-}
-  
-  @keyframes template2 {
-    0% {
-      opacity: 0.1;
-      transform: translateX(-100px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/FM.ico" type="image/x-icon">
+</head>
+<body>
+  <div id="template1" class="container">
+    <h1 class="animated-text invite">Your Invited to Celebrating Our</h1>
+    <h1 class="animated-text wedding">WEDDING</h1>
+    <h2 class="animated-text nama">Olivia &amp; Husein</h2>
+    <button id="btnSwitch" class="btn">Click Here</button>
+  </div>
     
-  }
-  .countdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    translate: 0 -70px;
-  }
 
-  .countdown-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
-  }
+  <div class="carousel template" id="carousel">
+    <div class="slide awal ">
+        <div id="template2" class=" pembuka hidden">
+          <p class="text">بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ</p>
+          <p class="text">Assalamu'alaikum Warahmatullahi Wabarakatuh,</p>
+      
+          <p class="text">Kami dengan sukacitanya mengundang Anda untuk hadir dalam pernikahan kami, sebagai bentuk kebersamaan dan doa restu atas kebahagiaan kami.</p>
+      
+          <p class="text">Terima kasih atas kehadiran dan doa restu yang diberikan.</p>
+      
+          <p class="text">Wa'alaikumussalam Warahmatullahi Wabarakatuh.</p>
+      
+        </div>
+      </div>
+    <div class="slide">
+        <div class="orangtua">
+          
+          <img style="width: 700px;" class="namapasangan" src="image/namapasangan.svg" alt="">
 
-  .countdown-item span {
-    font-size: 50px;
-    font-weight: bold;
+        </div>
+      </div>
+    <div class="slide">
+      <div>
+
+        <p class="Akad">AKAD</p>
+    <p class="date-label">30 Juni 2023</p>
     
-  }
+    <div class="countdown" id="countdown">
+      <div class="countdown-item">
+        <span id="days"></span>
+        <label>Hari</label>
+      </div>
+      <span class="titik">:</span>
+      <div class="countdown-item">
+        <span id="hours"></span>
+        <label>Jam</label>
+      </div>
+      <span class="titik">:</span>
+      <div class="countdown-item">
+        <span id="minutes"></span>
+        <label>Menit</label>
+      </div>
+      <span class="titik">:</span>
+      <div class="countdown-item">
+        <span id="seconds"></span>
+        <label>Detik</label>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="Resepsian">
+      <p class="Akad">RESEPSI</p>
+<p class="date-label">2 Juli 2023</p>
 
-  .countdown-item label {
-    font-size: 26px;
-
-  }
-
-  .date-label {
-    font-family: 'Dancing Script', cursive;
-    font-size: 100px;
-    margin-bottom: 10px;
-    translate: 0 -90px;
-  }
-
-  #audioPlayer {
-    display: none;
-  }
-  .titik{
-    font-size: 40px;
-    margin-top:-34px;
-  }
-
-  .Akad{
-    font-family: 'Cinzel Decorative', sans-serif;
-    font-size: 120px;
-    text-align: center;
-    translate: 0;
-    font-weight: bold;
-  }
+<div id="countdown" class="countdown">
+  <div class="countdown-item">
+    <span id="countdown-hari" class="countdown-value"></span>
+    <label>Hari</label>
+  </div>
+  <span class="titik">:</span>
+  <div class="countdown-item">
+    <span id="countdown-jam" class="countdown-value"></span>
+    <label>Jam</label>
+  </div>
+  <span class="titik">:</span>
+  <div class="countdown-item">
+    <span id="countdown-menit" class="countdown-value"></span>
+    <label>Menit</label>
+  </div>
+  <span class="titik">:</span>
+  <div class="countdown-item">
+    <span id="countdown-detik" class="countdown-value"></span>
+    <label>Detik</label>
+  </div>
+</div>
 
 
-  .tombol{
-    position: absolute;
-    bottom: 45px;
-    color: #3b3b3b;
-    display: none;
-  }
 
-  .previous{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    background-color: #CA9D61;
-    border-radius: 10px;
-    font-size: 25px;
-    margin-right: 50px;
-    cursor: pointer;
-  }
-  .previous:hover{
-    background-color: #3b3b3b;
-    color: #CA9D61;
-  }
-  .bounce_previous {
-    animation: bounce_previous 1.2s  ease-in-out ;
-  }
+    </div>
+</div>
+    <div class="slide">
+      <div class="doa_pengantin">
+        <p class="text">Doa untuk Pengantin</p>
+    <p class="text">Ya Allah, limpahkanlah rahmat, barakah, dan hidayah-Mu kepada pengantin kami. Jadikanlah pernikahan mereka sebagai ikatan yang kuat, penuh cinta, dan saling pengertian. Berikanlah mereka kebahagiaan, keberkahan, serta kesabaran dalam menjalani kehidupan berumah tangga.</p>
+    <p class="text">"Barangsiapa yang menikah, ia telah melengkapkan separuh agamanya, maka hendaklah ia bertaqwa kepada Allah pada separuh yang lainnya." (Hadis Abu Daud no 2130)</p>
+      </div>
+    </div>      
+<div class="slide">
+  <div class="turut_mengundang">
+    <p class="text" style="font-size: 32px;">Turut Mengundang</p>
 
-  @keyframes bounce_previous {
-    0% {
-      opacity: 0;
-      transform: scale(0.1);
-    }
-    60% {
-      opacity: 1;
-      transform: scale(1.1112);
-    }
-    80% {
-      transform: scale(0.9);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+    <p class="text">Kami yang berbahagia :</p>
+    <p class="text">-Keluarga Bapak Rendi Sorongan dan Ibu Ariyani</p>
+    <p class="text">- Keluarga Bapak H.Masrun dan Hj. Makiyah (Almh)</p>
 
-  .next{
-    background-color: #CA9D61;
-    border-radius: 5px;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    cursor: pointer;
+    <p class="text">Turut mengundang pihak perempuan:</p>
+    <p class="text">- Ibu Nurhanisyah (Embuy) & Bpk. Achmad</p>
+    <p class="text">- Bpk. Aliansyah (Alm) & Ibu Ati Sumiati</p>
+    <p class="text">- Ibu Juwita & Bpk. Jamaluddin</p>
+    <p class="text">- Ibu Siti Bulqis & Bpk. Indrawan Rizal Kadri</p>
 
-  }
-  .next:hover{
-    background-color: #3b3b3b;
-    color: #CA9D61;
-  }
-  .bounce_next {
-    animation: bounce_next 1.3s  ease-in-out ;
-  }
+    <p class="text">Turut mengundang pihak laki-laki:</p>
+    <p class="text">- Bpk. Anto & Ibu Satil Amelia</p>
+    <p class="text">- Bpk. Aidil Fitri (Alm) & Ibu Arbaya</p>
+    <p class="text">- Bpk. Muslimin & Ibu Mahdalena (Almh)</p>
+    <p class="text">- Bpk. Udin (Alm) & Ibu Sari</p>
+    <p class="text">- Bpk. Arhamsyah & Ibu Salsiah</p>
+    <p class="text">- Bpk. Usman & Ibu Erna</p>
+    <p class="text">- Bpk. Wawan & Ibu iin</p>
+    <p class="text">- Bpk. Usman & Ibu Erni</p>
+    <p class="text">- Bpk. Masdar & Ibu Indah</p>
+    <p class="text">- Ibu Hj. Maimunah</p>
+  </div>
+</div>
+<div class="slide mapp">
+  <div>
+    <h2>Tempat Pernikahan</h2>
+    <p>Harap hadir tepat waktu dan bawa undangan ini untuk masuk ke tempat acara.</p>
+  <p>Terima kasih atas kehadiran Anda dan doakanlah kebahagiaan kami.</p>
+  <p>Salam hangat,</p>
+  <p style="font-family: 'Dancing Script', cursive; font-size: 34px;">Olivia & Husein</p>
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.627614467151!2d117.15936087447896!3d-0.5602022352625515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df681f0c80baf8f%3A0xa5f4e090858c06ce!2sRumah%20ICHA!5e0!3m2!1sen!2sid!4v1687713253518!5m2!1sen!2sid" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+    
+<div class="indicators">
+        <div class="indicator active"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+      </div>
+  </div>
 
-  @keyframes bounce_next {
-    0% {
-      opacity: 0;
-      transform: scale(0.1);
-    }
-    60% {
-      opacity: 1;
-      transform: scale(1.1112);
-    }
-    80% {
-      transform: scale(0.9);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 
-  .carousel {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
   
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
+
   
-  .slide.active {
-    opacity: 1;
-  }
-  
-  .indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-  }
-  
-  .indicator {
-    width: 10px;
-    height: 10px;
-    background-color: #888;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    display: block;
-  }
-  
-  .indicator.active {
-    background-color: #333;
-  }
 
-  .orangtua{
-    translate: 0 -10%;
-  }
+  <div class="tombol" id="tombol">
+    <button class="previous bounce_previous"  id="previous-button">Sebelumnya</button>
+    <button class="next bounce_next" id="next-button">Selanjutnya</button>
+  </div>
 
-.item{
-  position: relative;
-}
-.pembuka{
-  position: absolute;
-  left: 10%;
-  width: 80%;
-  top: 10%;
-  font-size: 24px;
-}
 
-.doa_pengantin{
-  position: absolute;
-  width: 80%;
-  left: 10%;
-  top: 10%;
-}
-.text {
-  font-size: 26px;
-  font-weight: bold;
-}
+  <audio id="audioPlayer" autoplay>
+    <source src="music/Westlife Beautiful In White.mp3" type="audio/mp3">
+  </audio>
 
-.turut_mengundang .text {
-  font-size: 18px;
-}
-.turut_mengundang{
-  transform: translateY(-50%);
-  height:max-content;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: marquee 30s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateY(80%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
-.map{
-  position: absolute;
-  translate: -50%;
-  border-radius: 20px;
-}
-.mapp{
-  font-size: 20px;
-  translate: 0 15%;
-}
-
-@media (min-width: 360px) and (max-width: 414px) and (min-height: 640px) and (max-height: 896px) {
-  .container{
-    width: 90%;
-  }
-  .pembuka{
-  }
-  .orangtua{
-    scale: 60%;
-    translate: -21% -10%;
-  }
-  .Akad{
-
-  }
-  .date-label{
-    position: absolute;
-    scale: 50%;
-    width:max-content;
-    left:-25%;
-    bottom: 30%;
-  }
-  .countdown{
-    left: 5%;
-    bottom: 20%;
-    position: absolute;
-  }
-  .Resepsian{
-  }
-  .Resepsian .countdown{
-    position: absolute;
-    bottom: 20%;
-    left: 5%;
-  }
-  .Resepsian .Akad{
-    position: absolute;
-    scale: 70%;
-    left: -15%;
-  }
-  .Resepsian .date-label{
-    transform: translateX(20%);
-  }
-  .doa_pengantin{
-    width: 100%;
-    scale: 80%;
-    position: absolute;
-    left:0;
-    bottom: 30%;
-  }
-  .turut_mengundang{
-    width: 100%;
-  }
-  .turut_mengundang .text{
-    scale: 80%;
-  }
-.map{
-  translate: -50% -7%;
-}
-  }
+  <script src="script.js"></script>
+</body>
+</html>
