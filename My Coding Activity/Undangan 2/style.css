@@ -385,7 +385,8 @@
   }
   .pembuka{
     position: absolute;
-    left: 0;
+    left:-5%;
+    bottom:10%;
     scale: 80%;
     width:100%;
   }
