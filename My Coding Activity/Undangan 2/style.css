@@ -379,15 +379,11 @@
   translate: 0 15%;
 }
 
-@media (max-width: 360px) {
+@media (min-width: 360px) and (max-width: 414px) and (min-height: 640px) and (max-height: 896px) {
   .container{
     width: 90%;
   }
   .pembuka{
-    position: absolute;
-    left: 0;
-    scale: 90%;
-    width:100%;
   }
   .orangtua{
     scale: 60%;
