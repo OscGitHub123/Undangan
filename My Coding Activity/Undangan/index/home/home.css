@@ -1,0 +1,271 @@
+
+.Rait{
+    font-family: 'Dancing Script',cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 270%;
+    position: relative;
+    margin-top:20%;
+    transform: skewy(-10deg);
+}
+
+body {
+    background-image: url("image/background.png");
+    background-size: cover;
+    background-repeat: repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.Bolder{
+  font-weight: bold;
+}
+.bounce-in {
+    opacity: 0;
+    animation: bounce-in 1s ease-out forwards;
+  }
+  
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+      
+    }
+  }
+  
+.container{
+    position: absolute;
+    margin: auto;
+    background-color: #cfc2a7fd;
+    height:fit-content;
+    width: 70%;
+    padding: 0 15px 0 15px;
+    border: solid 0.5px rgb(224, 224, 224);
+    left: 14%;
+    top: 8px;
+}
+
+.kosong{
+    height: 30px;
+}
+.love{
+  background-image: url('image/Desain_tanpa_judul-removebg-preview.svg');
+  background-size: cover;
+  z-index: 100;
+  height: 52vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+.floating-image {
+    display: flex;
+    justify-content: center;
+    animation: floatUpDown 1s infinite ease-in-out alternate;
+    
+}
+.half-circle {
+    width: 80%;
+    height: 60%;
+    background-color: #f0f0f0;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-3px);
+    }
+}
+
+#countdown {
+    background-color: #faebd7;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 15px 5px  15px;
+    border-radius: 20px;
+    line-height: auto;
+}
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+.countdown-item span {
+    display: block;
+}
+.durasi{
+    font-size: medium;
+}
+.Section_1{
+    height: fit-content;
+    border-bottom: #3a2c16 , solid , 2px;
+}
+.Hari{
+    background-color: #7c6754;
+    color: #e0dcd3;
+    border-radius: 10px;
+    padding: 3px 15px;
+}
+.Pembukaan{
+    margin: auto;
+    font-family: 'Playfair', serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+}
+.accent{
+    background-color: #e3d5b8;
+    height: 1vh;
+    border: #3a2c16 dashed 2px;
+    border-top: transparent;
+    border-radius: 20px;
+}
+.garis{
+    border-top: 2px dashed #000;
+}
+
+.Section_2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    height: 73vh;
+    width: 100%;
+    position:relative;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-image: url(image/melati\ vektor.png) 50 round;
+}
+
+.Section_3{
+  background-image: url(image/Latar\ Map.png);
+  background-size: cover;
+  width:104%;
+  height: max-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -10px;
+  background-color: #747474;
+  background-blend-mode: multiply;
+  padding-bottom: 50px;
+}
+.Secttion_4{
+  
+}
+.map{
+  margin-bottom: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+.HeadDenah{
+  color: white;
+  font-size: 30px;
+  font-family: 'sans-serif' ;
+  width: 200px;
+}
+/* INDEX CSS */
+#invitationCard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(image/latar\ belakang.png);
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+.kartunikah{
+    position: relative;
+    margin: auto;
+    margin-bottom: -100px;
+    background-color: white;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+  #invitationCard.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #content {
+    text-align: center;
+    margin-top: -100vh;
+    transition: margin-top 0.5s;
+    display: block;
+  }
+
+  .button {
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color:#fdb454;
+    color:white ;
+  }
+  .animasikartu{
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 0.7s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-image: url(image/melati\ vektor.svg);
+    background-color: #cacaca;
+    
+  }
