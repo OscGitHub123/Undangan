@@ -379,15 +379,15 @@
   translate: 0 15%;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 360px) {
   .container{
     width: 90%;
   }
   .pembuka{
     position: absolute;
-    left: 5%;
+    left: 0;
     scale: 90%;
-    width:95%;
+    width:100%;
   }
   .orangtua{
     scale: 60%;
@@ -397,35 +397,44 @@
 
   }
   .date-label{
+    position: absolute;
     scale: 50%;
-    width: max-content;
-    translate: -15% -105%;
+    width:max-content;
+    left:-25%;
+    bottom: 30%;
   }
   .countdown{
-    translate: 10% -155%;
+    left: 5%;
+    bottom: 20%;
     position: absolute;
   }
   .Resepsian{
   }
   .Resepsian .countdown{
-    bottom: 5%;
-    left: 0;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
   }
   .Resepsian .Akad{
-    scale: 80%;
-    transform: translateX(-10%);
+    position: absolute;
+    scale: 70%;
+    left: -15%;
   }
   .Resepsian .date-label{
     transform: translateX(20%);
   }
   .doa_pengantin{
-    width: 110%;
+    width: 100%;
     scale: 80%;
     position: absolute;
-    translate:-13% -3%;
+    left:0;
+    bottom: 30%;
   }
   .turut_mengundang{
-    scale: 90%;
+    width: 100%;
+  }
+  .turut_mengundang .text{
+    scale: 80%;
   }
 .map{
   translate: -50% -7%;
