@@ -67,8 +67,14 @@ function formatTime(time) {
 }
 
 var audioPlayer = document.getElementById('audioPlayer');
-audioPlayer.addEventListener('ended', function() {
-  audioPlayer.style.display = 'none';
+
+document.addEventListener("mousemove", function() {
+  playAudio();
+});
+
+// Mendaftarkan event listener untuk mendeteksi pergerakan halaman
+window.addEventListener("scroll", function() {
+  playAudio();
 });
 
 
@@ -144,3 +150,4 @@ function perbaruiCountdown() {
 }
 
 perbaruiCountdown();
+
