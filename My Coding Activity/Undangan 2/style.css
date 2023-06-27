@@ -377,9 +377,6 @@ animation: marquee 35s linear infinite;
 }
 
 @keyframes marquee {
-0% {
-  transform: translateY(100%);
-}
 100% {
   transform: translateY(-100%);
 }
