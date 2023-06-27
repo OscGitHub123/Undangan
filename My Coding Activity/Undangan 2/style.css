@@ -371,7 +371,7 @@ font-weight: bold;
 transform: translateY(140%);
 height:max-content;
 white-space: nowrap;
-animation: marquee 25s linear infinite;
+animation: marquee 35s linear infinite;
 }
 .turut_mengundang img{
 }
